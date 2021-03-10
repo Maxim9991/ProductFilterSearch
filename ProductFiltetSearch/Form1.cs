@@ -280,5 +280,11 @@ namespace ProductFiltetSearch
                 dy += tbox.Size.Height + 10;
             }
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddNameFilter addName = new AddNameFilter();
+            addName.ShowDialog();
+        }
     }
 }

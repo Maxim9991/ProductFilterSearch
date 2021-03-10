@@ -34,6 +34,7 @@ namespace ProductFiltetSearch
             this.ColImage = new System.Windows.Forms.DataGridViewImageColumn();
             this.ColName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.СolPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,11 +74,22 @@ namespace ProductFiltetSearch
             this.СolPrice.HeaderText = "Ціна";
             this.СolPrice.Name = "СolPrice";
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(1021, 12);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "Додати";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1108, 561);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvProducts);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -96,6 +108,7 @@ namespace ProductFiltetSearch
         private System.Windows.Forms.DataGridViewImageColumn ColImage;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColName;
         private System.Windows.Forms.DataGridViewTextBoxColumn СolPrice;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
 
